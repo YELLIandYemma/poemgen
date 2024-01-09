@@ -7,7 +7,7 @@ const port = 5000;
 
 app.use(cors());
 
-// Predefined array of poems
+    
 const poems = [
   "Roses are red, violets are blue, sugar is sweet, and so are you.",
   "I wandered lonely as a cloud that floats on high o'er vales and hills.",
@@ -24,7 +24,7 @@ app.listen(port, () => {
 });
 
 function generateRandomPoem() {
-  // Generate a random index to pick a poem from the array
+
   const randomIndex = Math.floor(Math.random() * poems.length);
   return poems[randomIndex];
 }
