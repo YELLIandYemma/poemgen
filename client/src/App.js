@@ -1,5 +1,3 @@
-// my-poem-generator/src/App.js
-
 import React, { useState } from "react";
 import "./App.css";
 import { Helmet } from "react-helmet";
@@ -10,7 +8,9 @@ function App() {
 
   const generatePoem = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/generate-poem");
+      const response = await fetch(
+        "https://backend-7kvfq5vlb-yelliandyemma.vercel.app/api/generate-poem"
+      );
       const data = await response.json();
       setRandomPoem(data.poem);
     } catch (error) {
