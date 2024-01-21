@@ -18,7 +18,7 @@ const poems = [
   "A symphony of colors, the dawn's grand debut, Golden hues paint the sky anew, Chirping birds join the orchestra's cheer, Sunrise whispers hope, dispelling fear.",
 ];
 
-app.get("/api/generate-poem", (req, res) => {
+app.get("/", (req, res) => {
   const randomPoem = generateRandomPoem();
   res.json({ poem: randomPoem });
 });
