@@ -8,9 +8,7 @@ function App() {
 
   const generatePoem = async () => {
     try {
-      const response = await fetch(
-        "https://backend-7kvfq5vlb-yelliandyemma.vercel.app/api/generate-poem"
-      );
+      const response = await fetch("https://poemgen.vercel.app");
       const data = await response.json();
       setRandomPoem(data.poem);
     } catch (error) {
