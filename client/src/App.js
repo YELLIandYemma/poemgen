@@ -24,7 +24,7 @@ function App() {
       </Helmet>
       <main className="centered-container">
         <div className="content">
-          <h1 className="">Random Poem Generator</h1>
+          <h1 className=""> Poem Generator</h1>
           <button className="button" onClick={generatePoem}>
             Generate Poem
           </button>
